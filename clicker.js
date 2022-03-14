@@ -54,9 +54,9 @@ var purchase = {
 
 $(document).ready(function() {
     function textUpdate () {
-        $("#clicks").text(clicks);
-        $("#cps").text(CPS);
-        $("#cpc").text(CPC);
+        $("#clicks").html("Clicks" + clicks);
+        $("#cps").html("Clicks Per Second" + CPS);
+        $("#cpc").html("Clicks Per Click:" + CPC);
     }
     setInterval(textUpdate, 100);
 
