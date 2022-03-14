@@ -1,3 +1,7 @@
+//window stuff
+var winWidth;
+var prevWinWidth;
+
 var clicks = 0;
 var CPS = 0;
 var CPC = 1;
@@ -62,6 +66,17 @@ $(document).ready(function() {
         $("#clicks").html("Clicks: " + clicks);
         $("#cps").html("Clicks Per Second: " + CPS);
         $("#cpc").html("Clicks Per Click: " + CPC);
+
+        //code for detecting window changes
+        winWidth = $(window).width();
+        if (prevWinWidth != winWidth) {
+            if (winWidth < 1000) {
+                $('#mCSS').attr('href', 'mStyle.css');
+            } else {
+                $('#mCSS').attr('href', '');
+            }
+        }
+        prevWinWidth = winWidth;
     }
     setInterval(textUpdate, 100);
 
