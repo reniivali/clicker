@@ -9,14 +9,20 @@
   <body>
     <div id="cont1" class="content">
       <h1>Clicker</h1>
-      <h2 id="clicks">Clicks: </h2>
-      <h2 id="cpc">Clicks Per Click: </h2>
-      <h2 id="cps">Clicks Per Second: </h2>
+      <h1 id="clicks">Clicks: </h1>
+      <h1 id="cpc">Clicks Per Click: </h1>
+      <h1 id="cps">Clicks Per Second: </h1>
       <button id="click" onclick="clicks += CPC" data-tilt>Click</button>
     </div>
 
     <div id="cont2" class="content">
       <h1>Upgrades</h1>
+      <div id="cpcU1"class="upgrade" data-tilt>
+        <h1>Clicks Per Click</h1>
+        <h1>Cost: </h1>
+        <h1>CPC: </h1>
+        <button id="upgrade1" onclick="alert('Psyche! you thought.')">Upgrade</button>
+      </div>
     </div>
 
     <script src="vanilla-tilt.min.js"></script>
