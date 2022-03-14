@@ -37,6 +37,7 @@ body {
   background-color: rgb(36, 36, 36);
   margin-bottom: 10px;
   height: 95%;
+  overflow-x: hidden;
 }
 
 .content button, .upgrade button {
@@ -56,13 +57,18 @@ body {
   border-style: solid;
   border-width: 3px;
   border-color: rgb(100, 100, 100);
-  border-radius: 10px;
-  overflow-y: scroll;
+  border-radius: 0px;
+  overflow-y: hidden;
   padding: 10px;
   transition: all .2s;
   background-color: rgb(36, 36, 36);
   margin-bottom: 10px;
   height: auto;
+  overflow-x: hidden;
+  display: block;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .upgrade h1 {
@@ -70,6 +76,7 @@ body {
   color: rgb(255, 255, 255);
   font-size: 20px;
   text-align: center;
+  transition: all .2s;
 }
 
 .upgrade:hover h1 {
@@ -77,7 +84,8 @@ body {
 }
 
 .upgrade:hover {
-  transform: scale(1.1);
+  background-color: rgb(53, 53, 53);
+  border-radius: 10px;
 }
 
 .content button:hover, .upgrade button:hover {
