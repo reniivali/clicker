@@ -9,6 +9,10 @@ var cursor = {
     Own: 0,
     priceUp: 5,
     addVal: 1,
+    updateElements: function() {
+        $('#cursorPrice').html("Cost: " + this.Price);
+        $('#cursorOwn').html("Owned: " + this.Own);
+    }
 }
 
 var cursor2 = {
@@ -48,6 +52,7 @@ var purchase = {
                 thing.Price += thing.priceUp;
                 thing.Own += 1;
             }
+            thing.updateElements();
         },
     },
 }
