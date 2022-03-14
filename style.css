@@ -1,3 +1,18 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(87, 87, 87);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #9b9b9b;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(236, 236, 236);
+}
+
 @font-face {
   font-family: "Monofur";
   src: url('monofur.ttf') format('truetype');
@@ -35,6 +50,18 @@ body {
 }
 
 .content button:hover {
+  font-family: "Monofur";
   background-color: rgb(100, 100, 100);
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#click {
+  font-size: 40px;
+}
+
+#cont1 {
+  width: 45%;
+  margin-left: 5%;
+  padding: 5px;
+  height: 100%;
 }
