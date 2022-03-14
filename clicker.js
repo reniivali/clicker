@@ -6,7 +6,6 @@ var prevWinWidth;
 var clicks = 0;
 var CPS = 0;
 var CPC = 1;
-var purchasesMenuClassint = 1;
 
 var cursor = {
     Price: 15,
@@ -42,6 +41,9 @@ var clickerUp = {
 //load from local storage, if there are variables saved (this needs to be AFTER variable declaration)
 var doLoad = localStorage.getItem("doLoad")
 if (doLoad != null) {
+    clicks = +localStorage.getItem("clicks");
+    CPS = +localStorage.getItem("CPS");
+    CPC = +localStorage.getItem("CPC");
     loadItem(cursor, "cursor");
     loadItem(cursor2, "cursor2");
     loadItem(clicker, "clicker");
@@ -105,6 +107,9 @@ $(document).ready(function() {
         clicks += CPS;
 
         //Save Items
+        localStorage.setItem("clicks", clicks);
+        localStorage.setItem("CPS", CPS);
+        localStorage.setItem("CPC", CPC);
         saveItem(cursor, "cursor");
         saveItem(cursor2, "cursor2");
         saveItem(clicker, "clicker");
