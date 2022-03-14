@@ -51,3 +51,17 @@ var purchase = {
         },
     },
 }
+
+$(document).ready(function() {
+    function textUpdate () {
+        $("#clicks").text(clicks);
+        $("#cps").text(CPS);
+        $("#cpc").text(CPC);
+    }
+    setInterval(textUpdate, 100);
+
+    function second() {
+        clicks += CPS;
+    }
+    setInterval(second, 1000);
+});
