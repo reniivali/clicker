@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Monofur";
+  src: url('monofur.ttf') format('truetype');
+}
+
+body {
+  font-family: "Monofur";
+  background-color: rgb(36, 36, 36);
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.content {
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(100, 100, 100);
+  border-radius: 10px;
+  overflow-y: scroll;
+  padding: 10px;
+  transition: all .2s;
+  background-color: rgb(36, 36, 36);
+  margin-bottom: 10px;
+}
+
+.content button {
+  font-family: "Monofur";
+  background-color: rgb(36, 36, 36);
+  color: rgb(255, 255, 255);
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(100, 100, 100);
+  border-radius: 10px;
+  padding: 10px;
+  transition: all .2s;
+}
+
+.content button:hover {
+  background-color: rgb(100, 100, 100);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
