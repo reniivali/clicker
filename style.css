@@ -26,6 +26,7 @@ body {
 }
 
 .content {
+  position: absolute;
   border-style: solid;
   border-width: 3px;
   border-color: rgb(100, 100, 100);
@@ -56,12 +57,16 @@ body {
 }
 
 #click {
-  font-size: 40px;
+  font-size: 80px;
+}
+
+#click:hover {
+  font-size: 100px;
 }
 
 #cont1 {
-  width: 45%;
-  margin-left: 5%;
+  width: 46%;
+  margin-left: 2%;
   padding: 5px;
   height: 100%;
 }
