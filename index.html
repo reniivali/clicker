@@ -18,12 +18,32 @@
 
     <div id="cont2" class="content">
       <h1>Upgrades</h1>
-      <div id="cpcU1"class="upgrade" data-tilt>
+      <div id="cpcU"class="upgrade" data-tilt>
         <h1>Clicks Per Click</h1>
-        <h1>Tier 1</h1>
+        <h1>Tier I</h1>
         <h1 id="cursorPrice">Cost: 15</h1>
         <h1 id="cursorOwn">Owned: 0</h1>
-        <button id="upgrade1" onclick="purchase.add.CPC(cursor)">Upgrade</button>
+        <button onclick="purchase.add.CPC(cursor)">Upgrade</button>
+        <h3>-----</h3>
+        <h1>Tier II</h1>
+        <h1 id="cursorPrice2">Cost: 1000</h1>
+        <h1 id="cursorOwn2">Owned: 0</h1>
+        <button onclick="purchase.add.CPC(cursor2)">Upgrade</button>
+      </div>
+      <div id="clickerU" class="upgrade" data-tilt>
+        <h1>Clicker Upgrade</h1>
+        <h1>Tier I</h1>
+        <h1 id="clickerUpPrice">Cost: 1000</h1>
+        <h1 id="clickerUpOwn">Owned: 0</h1>
+        <button onclick="purchase.noAdd(clickerUp, true)">Upgrade</button>
+      </div>
+
+      <h1>Machines</h1>
+      <div id="clicker" class="upgrade" data-tilt>
+        <h1>Clicker</h1>
+        <h1 id="clickerPrice">Cost: 100</h1>
+        <h1 id="clickerOwn">Owned: 0</h1>
+        <button onclick="purchase.noAdd(clicker, false)">Upgrade</button>
       </div>
     </div>
 
