@@ -13,8 +13,8 @@ var cursor = {
     priceUp: 5,
     addVal: 1,
     updateElements: function() {
-        $('#cursorPrice').html("Cost: " + this.Price);
-        $('#cursorOwn').html("Owned: " + this.Own);
+        $('#cursorPrice').html("Cost: " + this.Price.toLocaleString('de'));
+        $('#cursorOwn').html("Owned: " + this.Own.toLocaleString('de'));
     }
 }
 
@@ -24,8 +24,8 @@ var cursor2 = {
     priceUp: 500,
     addVal: 10,
     updateElements: function() {
-        $('#cursorPrice2').html("Cost: " + this.Price);
-        $('#cursorOwn2').html("Owned: " + this.Own);
+        $('#cursorPrice2').html("Cost: " + this.Price.toLocaleString('de'));
+        $('#cursorOwn2').html("Owned: " + this.Own.toLocaleString('de'));
     }
 }
 
@@ -34,8 +34,8 @@ var clicker = {
     priceAdd: 50,
     Own: 0,
     updateElements: function() {
-        $('#clickerPrice').html("Cost: " + this.Price);
-        $('#clickerOwn').html("Owned: " + this.Own);
+        $('#clickerPrice').html("Cost: " + this.Price.toLocaleString('de'));
+        $('#clickerOwn').html("Owned: " + this.Own.toLocaleString('de'));
     }
 }
 
@@ -44,8 +44,8 @@ var clickerUp = {
     priceAdd: 500,
     Own: 1,
     updateElements: function() {
-        $('#clickerUpPrice').html("Cost: " + this.Price);
-        $('#clickerUpOwn').html("Owned: " + (this.Own-1));
+        $('#clickerUpPrice').html("Cost: " + this.Price.toLocaleString('de'));
+        $('#clickerUpOwn').html("Owned: " + (this.Own-1).toLocaleString('de'));
     }
 }
 
@@ -103,9 +103,9 @@ function loadItem(item, id) {
 
 $(document).ready(function() {
     function textUpdate () {
-        $("#clicks").html("Clicks: " + clicks);
-        $("#cps").html("Clicks Per Second: " + CPS);
-        $("#cpc").html("Clicks Per Click: " + CPC);
+        $("#clicks").html("Clicks: " + clicks.toLocaleString('de'));
+        $("#cps").html("Clicks Per Second: " + CPS.toLocaleString('de'));
+        $("#cpc").html("Clicks Per Click: " + CPC.toLocaleString('de'));
 
         CPS = clicker.Own * clickerUp.Own;
 
