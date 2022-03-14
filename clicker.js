@@ -79,6 +79,7 @@ function saveItem(item, id) {
 function loadItem(item, id) {
     item.Price = +localStorage.getItem(id + "price");
     item.Own = +localStorage.getItem(id + "own");
+    item.updateElements();
 }
 
 $(document).ready(function() {
