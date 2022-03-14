@@ -74,6 +74,7 @@ var purchase = {
             } else {
                 thing.Price += thing.priceAdd;
             }
+            thing.updateElements();
         }
     },
     add: {
