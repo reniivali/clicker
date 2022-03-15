@@ -69,7 +69,7 @@ var purchase = {
       thing.Own += 1;
       clicks -= thing.Price;
       if (expo) {
-        thing.price = thing.price * 2;
+        thing.Price = thing.Price * 2;
       } else {
         thing.Price += thing.priceAdd;
       }
