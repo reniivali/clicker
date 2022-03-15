@@ -108,7 +108,7 @@ $(document).ready(function () {
   clickerUp.updateElements();
 
   function textUpdate() {
-    $("#clicks").html("Clicks: " + clicks.toLocaleString("de"));
+    $("#clicks").html("Clicks: " + Math.round(clicks).toLocaleString("de"));
     $("#cps").html("Clicks Per Second: " + CPS.toLocaleString("de"));
     $("#cpc").html("Clicks Per Click: " + CPC.toLocaleString("de"));
 
@@ -127,9 +127,12 @@ $(document).ready(function () {
   }
   setInterval(textUpdate, 100);
 
-  function second() {
-    clicks += CPS;
+  function clickUpdate() {
+    clicks += CPS / 60;
+  }
+  setInterval(clickUpdate, 1000 / 60);
 
+  function second() {
     //Save Items
     localStorage.setItem("clicks", clicks);
     localStorage.setItem("CPS", CPS);
